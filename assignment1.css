@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    --text-color:#fff;
+}
+body{
+    text-align:center;
+    font-size:1.3rem;
+    text-transform: uppercase;
+    height:100vh;
+}
+header,footer{
+    height:15vh;
+    background-color: black;
+    color:var(--text-color);
+    padding:1rem;
+}
+nav{
+    height:10vh;
+    background-color: cornsilk;
+    padding:.8rem;
+}
+main{
+    height:60vh;
+    color:crimson;
+    padding:90px;
+}

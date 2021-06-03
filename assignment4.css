@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header,footer{
+    height:10vh;
+    background-color: lightcoral;
+    padding:1rem;   
+}
+
+main{
+    height:80vh;
+    background-color: linen;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section1,.section3{
+    width:60%;
+    background-color: palevioletred;
+    margin:10px 20px 10px 20px;
+}
+
+.aside1,.aside2{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    margin:10px 20px 10px 50px;
+}
+
+.aside1 > img{
+    width:100%;
+    height:260px;
+}
+
+.section2{
+    width:100%;
+    height:100px;
+    background-color: palevioletred;
+    margin:10px 20px 10px 30px;
+}
+.aside1 > input[type="button"] ,.aside2 > input[type="button"]{
+    height:40px;
+    outline:none;
+    border:none;
+    background-color: gold;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* media queries begins here*/
+@media screen and (max-width:1020px){
+    main{
+        background-color: white;
+        justify-content: space-evenly;
+    }
+   
+    .section1,.section3{
+        margin: 20px 10px;
+        height:100px
+    }
+    
+    .aside1,.aside2{
+        height:100px;
+        margin: 20px 10px;
+    }
+
+    .aside1 > img{
+        height:60px;
+    }
+    .section2{
+        width:100%;
+        height:100px;
+        background-color: palevioletred;
+        margin: 20px 10px;
+    }
+    .aside2 > input[type="button"]{
+        height:100px;
+        
+    }
+}
